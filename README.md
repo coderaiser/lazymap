@@ -56,7 +56,7 @@ MIT
 [BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/lazymap/master.svg?style=flat
 [DependencyStatusIMGURL]:   https://img.shields.io/gemnasium/coderaiser/lazymap.svg?style=flat
 [LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
-[NPMURL]:                   https://npmjs.org/package/longrun "npm"
+[NPMURL]:                   https://npmjs.org/package/lazymap "npm"
 [BuildStatusURL]:           https://travis-ci.org/coderaiser/lazymap  "Build Status"
 [DependencyStatusURL]:      https://gemnasium.com/coderaiser/lazymap "Dependency Status"
 [LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
