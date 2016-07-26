@@ -52,7 +52,7 @@ When loaded in browser `lazymap` uses global variable with same name (when `brow
 
 MIT
 
-[NPMIMGURL]:                https://img.shields.io/npm/v/longrun.svg?style=flat
+[NPMIMGURL]:                https://img.shields.io/npm/v/lazymap.svg?style=flat
 [BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/lazymap/master.svg?style=flat
 [DependencyStatusIMGURL]:   https://img.shields.io/gemnasium/coderaiser/lazymap.svg?style=flat
 [LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
