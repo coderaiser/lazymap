@@ -1,0 +1,61 @@
+{
+  "name": "lazymap",
+  "version": "1.0.0",
+  "description": "lazy evaluate array processing, do only what you need",
+  "main": "lib/lazymap.js",
+  "directories": {
+    "test": "test"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "scripts": {
+    "test": "tape 'test/**/*.js'",
+    "watch": "nodemon --watch lib --watch test -d 0.3 --exec",
+    "watch:test": "npm run watch -- npm test",
+    "jscs": "jscs --esnext lib test",
+    "jshint": "jshint lib test",
+    "eslint": "eslint lib test",
+    "lint": "redrun jshint jscs eslint",
+    "jscs-fix": "npm run jscs --fix",
+    "coverage": "nyc npm test",
+    "report": "nyc report --reporter=text-lcov | coveralls",
+    "6to5": "babel lib -d legacy",
+    "wisdom": "npm run build",
+    "minify": "minify dist/lazymap.js > dist/lazymap.min.js",
+    "mkdir": "mkdirp dist legacy",
+    "build": "redrun mkdir 6to5 legacy:index bundle:legacy minify",
+    "bundle:base": "browserify -s lazymap --ng false",
+    "legacy:index": "echo \"module.exports = require('./lazymap');\" > legacy/index.js",
+    "bundle:legacy:base": "npm run bundle:base -- -r ./legacy/lazymap.js:lazymap ./legacy/lazymap.js",
+    "bundle:legacy": "npm run bundle:legacy:base -- -o dist/lazymap.js"
+  },
+  "dependencies": {
+    "currify": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "coveralls": "^2.11.11",
+    "eslint": "^3.1.1",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.2",
+    "minify": "^2.0.11",
+    "nyc": "^7.1.0",
+    "tape": "^4.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coderaiser/lazymap.git"
+  },
+  "keywords": [
+    "lazy",
+    "array",
+    "list",
+    "map"
+  ],
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
+  "license": "MIT"
+}

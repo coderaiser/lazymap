@@ -1,0 +1,25 @@
+{
+  "name": "lazymap",
+  "homepage": "https://github.com/coderaiser/lazymap",
+  "authors": [
+    "coderaiser <mnemonic.enemy@gmail.com>"
+  ],
+  "description": "Right-to-left conditional function composition. Get some result of filter functions calls.",
+  "main": "lib/lazymap.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "lazy",
+    "array",
+    "list",
+    "map"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test"
+  ]
+}
