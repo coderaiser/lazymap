@@ -33,7 +33,7 @@
     "bundle:legacy": "npm run bundle:legacy:base -- -o dist/lazymap.js"
   },
   "dependencies": {
-    "currify": "^1.0.0"
+    "currify": "^2.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
